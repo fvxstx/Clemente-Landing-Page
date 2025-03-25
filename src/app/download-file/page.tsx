@@ -1,9 +1,14 @@
 "use client";
+import React, { useEffect, useState } from "react";
 import { Button } from "@/components/ui/button";
 import { FaWindows } from "react-icons/fa";
 import HeaderDownloadDefault from "./components/HeaderDownload";
 export default function DownloadFilePage() {
-  const tokenLocal = localStorage.getItem("token");
+  const [tokenLocal, setTokenLocal] = useState<string | null>(null);
+
+  useEffect(() => {
+    setTokenLocal(localStorage.getItem("token"));
+  }, []);
 
   const handleDownload = () => {
     const fileUrl = "/dist/clemente-customer.exe";
