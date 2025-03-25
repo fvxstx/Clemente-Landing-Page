@@ -1,0 +1,34 @@
+directories:
+  output: dist
+  buildResources: build
+appId: com.clemente.customer.app
+productName: Clemente Customer App
+files:
+  - filter:
+      - main.js
+      - server.js
+      - output/**/*
+      - assets/**/*
+      - package.json
+asar: true
+win:
+  icon: assets/icons/icon.ico
+  target:
+    - nsis
+  artifactName: ${productName}Setup-${version}.exe
+  compression: maximum
+nsis:
+  oneClick: false
+  allowToChangeInstallationDirectory: true
+  perMachine: false
+mac:
+  icon: assets/icons/icon.icns
+  target:
+    - dmg
+    - zip
+linux:
+  icon: assets/icons/icon.png
+  target:
+    - AppImage
+    - deb
+electronVersion: 25.9.8
