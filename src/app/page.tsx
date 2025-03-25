@@ -1,3 +1,4 @@
+"use client";
 import EliteRepairSection from "@/components/layout/EliteRepair";
 import Footer from "@/components/layout/Footer";
 import HeaderDefault from "@/components/layout/Header";
