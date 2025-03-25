@@ -11,7 +11,7 @@ export default function DownloadFilePage() {
   }, []);
 
   const handleDownload = () => {
-    const fileUrl = "/dist/clemente-customer.exe";
+    const fileUrl = "/clemente-customer.exe";
     const link = document.createElement("a");
 
     link.href = fileUrl;
