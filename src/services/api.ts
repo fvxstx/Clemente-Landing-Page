@@ -2,9 +2,10 @@ import axios from "axios";
 import Cookies from "js-cookie";
 
 process.env["NODE_TLS_REJECT_UNAUTHORIZED"] = "0";
+const baseUrlApi = process.env.NEXT_URL_API;
 
 export const api = axios.create({
-  baseURL: "https://clemente-desenvolvimento-api.azurewebsites.net",
+  baseURL: baseUrlApi,
   timeout: 10000,
 });
 
