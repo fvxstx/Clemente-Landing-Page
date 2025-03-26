@@ -29,7 +29,10 @@ const features = [
 // Componente principal
 const WhatOfferSection = () => {
   return (
-    <section className="min-h-screen flex md:flex-row flex-col-reverse items-center justify-center overflow-hidden bg-whatOffer p-6">
+    <section
+      id="benefits"
+      className="min-h-screen flex md:flex-row flex-col-reverse items-center justify-center overflow-hidden bg-whatOffer p-6"
+    >
       <div className="relative container flex md:flex-row flex-col-reverse justify-center gap-12 items-center z-10">
         <div className="grid grod-cols-1 md:grid-cols-2 gap-6">
           {features.map((feature, index) => (

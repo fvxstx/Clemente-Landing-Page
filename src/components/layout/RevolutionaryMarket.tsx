@@ -32,7 +32,10 @@ const categories: VehicleCategoryProps[] = [
 // Componente principal
 export function RevolutionaryMarketSection() {
   return (
-    <section className="bg-general-gradient-top-bottom flex w-full flex-col justify-center items-center gap-10 md:gap-32 mt-2 md:mt-10 pb-20">
+    <section
+      id="features"
+      className="bg-general-gradient-top-bottom flex w-full flex-col justify-center items-center gap-10 md:gap-32 mt-2 md:mt-10 pb-20"
+    >
       {/* Componente imagem e gradiente */}
       <div className="mt-8 md:mt-16 container bg-revolution-market mx-auto flex flex-col md:flex-row justify-center gap-6 items-center py-6 md:py-16 px-6 border border-[#61E529] rounded-3xl">
         <div className="space-y-6 text-center md:text-left">

@@ -2,7 +2,10 @@ import { Button } from "../ui/button";
 
 const EliteRepairSection = () => {
   return (
-    <section className="relative flex w-full flex-col justify-center items-center bg-general-gradient md:p-10 pt-10">
+    <section
+      id="modulo-pro"
+      className="relative flex w-full flex-col justify-center items-center bg-general-gradient md:p-10 pt-10"
+    >
       <img
         src="phone-laptop-desktop.png"
         alt=""
